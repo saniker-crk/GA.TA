@@ -1,0 +1,108 @@
+/* ----------------------------------------
+   1) Κεντρικό container για τη σελίδα Payment
+   ---------------------------------------- */
+   .cart {
+    /* Περιορίζει το πλάτος, ώστε να μην απλώνεται σε όλη την οθόνη */
+    max-width: 800px;
+    
+    /* Κεντράρει το container οριζόντια (auto αριστερά-δεξιά) */
+    margin: 2rem auto; 
+    
+    /* Λίγο εσωτερικό κενό γύρω από το περιεχόμενο */
+    padding: 1rem;
+    
+    /* Αν θες όλο το κείμενο να βγαίνει στο κέντρο (π.χ. τίτλοι, παράγραφοι κ.λπ.),
+       ξεκλείδωσε την επόμενη γραμμή: */
+    /* text-align: center; */
+  }
+  
+  /* Τίτλος Payment Method (#Payment Method) */
+  .cart h3 {
+    font-weight: bold;
+    text-transform: uppercase; 
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Στυλ στη φόρμα επιλογής πληρωμής */
+  .cart form {
+    margin-top: 1rem;
+  }
+  
+  /* Στυλ στα radio buttons (κλασικές κλάσεις Bootstrap: form-check, my-2) */
+  .cart .form-check {
+    margin: 1rem 0;
+  }
+  .cart .form-check-input {
+    transform: scale(1.2);  /* Κάνε τα λίγο πιο μεγάλα, αν θες */
+    margin-right: 0.5rem;
+  }
+  
+  /* To κουμπί Continue (Bootstrap btn-primary) */
+  .cart .btn-primary {
+    background-color: #ff6600; /* Πορτοκαλί */
+    border: none;              /* Χωρίς default border */
+    border-radius: 4px;        /* Προαιρετική στρογγυλοποίηση γωνιών */
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Hover effect */
+  .cart .btn-primary:hover {
+    background-color: #e65c00; /* Λίγο πιο σκούρο πορτοκαλί */
+  }
+  
+  /* Αν εμφανίζεται μήνυμα λάθους (π.χ. setError), μπορείς να το στολίσεις έτσι: */
+  .cart .error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+  
+  /* ----------------------------------------
+     2) Στυλ για τη μπάρα βημάτων (CheckoutSteps)
+     ---------------------------------------- */
+  .checkout-steps {
+    display: flex;
+    justify-content: center;  /* Στο κέντρο */
+    background-color: #9f9f9f; /* Γκρι φόντο */
+    border-radius: 4px;       /* Προαιρετικά στρογγυλεύεις */
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;      /* Κενό κάτω από τη μπάρα */
+  }
+  
+  /* Links των βημάτων */
+  .checkout-steps .nav-link {
+    color: #fff !important;  
+    background-color: #9f9f9f;
+    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;         /* Απόσταση ανάμεσα στα βήματα */
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    text-align: center;
+  }
+  
+  /* Hover: αν είναι enabled το link */
+  .checkout-steps .nav-link:hover {
+    background-color: #b8b8b8;
+    text-decoration: none;
+  }
+  
+  /* Disabled links (όταν δεν έχεις φτάσει ακόμα σε αυτό το step) */
+  .checkout-steps .nav-link.disabled {
+    background-color: #cccccc;
+    color: #666666 !important;
+    cursor: not-allowed;
+  }
+  
+  /* Το τρέχον / ενεργό βήμα σε πορτοκαλί */
+  .checkout-steps .nav-link.active {
+    background-color: #e08a00;
+    color: #fff !important;
+    cursor: default;
+    pointer-events: none; 
+  }
+  

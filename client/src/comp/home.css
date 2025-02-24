@@ -1,0 +1,596 @@
+*
+{
+    margin: 0;
+    padding: 0 ;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.home
+{
+    width: 100%;
+}
+
+.home .top_banner 
+{
+    
+   
+    max-width: 100%;
+    height:500px;
+    margin-top: 130px;
+    margin-left: 200px;
+    background: url(../../../img/EIKONES/test.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 60px;
+}
+
+.home .top_banner .contant
+{
+    width: 100%;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    padding: 10px 50px;
+    
+}
+
+
+.home .top_banner .contant h3{
+    text-transform: capitalize;
+    color: #cd1e76;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.home .top_banner .contant h2
+{
+    text-transform: uppercase;
+    color :black;
+    letter-spacing: 1px;
+    font-size: 42px;
+    margin-top: 10px;
+    
+}
+
+.home .top_banner .contant .link 
+{
+    margin-top: 30px;
+    padding: 5px 30px;
+    background: #e9660f;
+    color: #232323;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-bottom: 30px;
+}
+
+.home .top_banner .contant .link:hover
+ {
+    color: #df9903;
+    background:  #df9903;
+    
+}
+
+.home .trending
+{
+    padding: 10px 20px;
+    
+    width: 100%;
+    
+
+}
+
+.home .trending .container 
+{
+    max-width: 100%;
+    display: flex;
+
+}
+
+.home .trending .container .left_box
+{
+    padding: 10px 20px;
+    width: 75%;
+}
+
+.home .trending .container .left_box .header
+{
+    display: flex;
+    max-width: 100%;
+    padding: 10px 10px;
+    background: #f6f7f8;
+    justify-content: space-between;
+}
+
+.home .trending .container .left_box .header .heading h2
+{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #232323;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.home .trending .container .left_box .header .cate
+{
+    display: flex;
+    margin-top: 5px;
+
+}
+
+.home .trending .container .left_box .header .cate h3
+{
+    text-transform: capitalize;
+    margin-right: 10px;
+    color: #232323;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.home .trending .container .left_box .header .cate h3:hover
+{
+    color:#d8800d
+}
+
+.home .trending .container .left_box .products
+{
+    max-width: 100%;
+    padding: 10px 10px;
+    position: relative;
+    left: 0px;
+  
+
+}
+
+
+.home .trending .container .left_box .products .container 
+{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    
+
+}
+
+.home .trending .container .left_box .products button
+{
+    margin-top: 20px;
+    margin-left: 50%;
+    padding: 10px 30px;
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    background: #db8c16;
+    cursor: pointer;
+}
+.home .trending .container .left_box .products .container .box 
+{
+    flex: 1 1 calc(25% - 20px); /* Πλάτος ίσο με το 25% της σειράς, αφαιρώντας το κενό */
+    max-width: calc(25% - 20px); /* Εξασφαλίζει ότι το πλάτος δεν ξεπερνά το 25% */
+    height: 500x;
+    padding: 20px 20px;
+    border: 4px solid #f6f7f8;
+    background: #ffffff;
+    
+    border-radius: 100px;
+    box-sizing: border-box;
+
+}
+.home .trending .container .left_box .products .container .box .img_box 
+{
+   display: flex;
+    justify-content: center; /* Κεντραρισμένη εικόνα */
+    align-items: center;
+    width: 100%;
+    height: 190px; /* Σταθερό ύψος για το box εικόνας */
+   
+}
+
+.home .trending .container .left_box .products .container .box .img_box img
+{
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+}
+
+.home .trending .container .left_box .products .container .box .img_box .icon
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+    margin-top: 10px;
+    transition: 0.5s;
+
+
+}
+.home .trending .container .left_box .products .container .box:hover .img_box .icon
+{
+    margin-left: -20%;
+}
+
+.home .trending .container .left_box .products .container .box .img_box .icon .icon_box 
+{
+    padding: 10px 10px;
+    margin-top: 10px;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    z-index: 1;
+    background: #fff;
+    color: #df9307;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.home .trending .container .left_box .products .container .box .img_box .icon .icon_box:hover
+{
+    color:#fff;
+    background: #df9307;
+}
+
+
+.home .trending .container .left_box .products .container .box .info
+
+{
+    padding: 10px 10px;
+    margin-left: 30%;
+}
+
+.home .trending .container .left_box .products .container .box .info h3
+{
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #2e2117;
+        font-weight: 300;
+        letter-spacing: 1px;
+}
+
+.home .trending .container .left_box .products .container .box .info p
+{
+    color: #502d05;
+    margin-top: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.home .trending .container .left_box .products .container .box .info .btn
+{
+    margin-top: 10px;
+    align-items: center;
+    padding: 10px 20px;
+    margin-left: 20px;
+    background: none;
+    outline: none;
+    background: #e9660f;
+    color: #000000;
+    border-radius: 10px;
+    text-transform: capitalize;
+    transition: 0.5s;
+
+}
+
+.home .trending .container .left_box .products .container .box .info .btn:hover
+{
+    color: coral;
+}
+
+
+.home .trending .container .right_box
+{
+    padding: 10px 10px;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home .trending .container .right_box .right_container
+{
+    max-width: 100%;
+    background: #f6f7f8;
+
+
+}
+
+.home .trending .container .right_box .right_container .newsletter
+{
+    width: 100%;
+    border: 4px solid #f6f7f8;
+    margin-top: 20px;
+    padding: 10px 10px;
+
+}
+
+.home .trending .container .right_box .right_container .newsletter .head
+{
+   margin-top: 10px;
+   width: 100%;
+
+    
+}   
+
+.home .trending .container .right_box .right_container .newsletter .head h3
+{
+        text-align: center;
+        color: #232323;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        letter-spacing: 1px;
+}
+
+.home .trending .container .right_box .right_container .newsletter .form
+{
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+
+.home .trending .container .right_box .right_container .newsletter .form p
+{
+   text-align: center;
+   text-transform: capitalize;
+   color: #8a8a8a;
+
+}
+.home .trending .container .right_box .right_container .newsletter .form input
+
+{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 10px;
+    background: none;
+    outline: none;
+    border: none;
+    border: 1px solid #8a8a8a;
+    color: #232323;
+}
+
+.home .trending .container .right_box .right_container .newsletter .form button
+{
+        margin-top: 10px;
+        margin-left: 150px;
+        padding: 10px 30px;
+        border: none;
+        background: none;
+        outline: none;
+        background: #db8c16;
+        color: #232323;
+        font-weight: 600;
+        cursor: pointer;
+}
+
+.home .trending .container .right_box .right_container .newsletter .form .icon_box
+{
+    margin-top: 20px;
+    margin-left: 110px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.home .trending .container .right_box .right_container .newsletter .form .icon
+{
+    padding: 10px 10px;
+    border-radius: 50%;
+    border: 1px solid #db8c16;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.home .trending .container .right_box .right_container .newsletter .form .icon:hover
+{
+    color: #fff;
+    background: #db8c16;
+
+}
+
+.banners {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f9f9f9; /* Ανοιχτόχρωμο φόντο για αντίθεση */
+}
+
+.banners .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Δύο στήλες: 1/3 και 2/3 */
+    gap: 15px; /* Κενά ανάμεσα στα στοιχεία */
+}
+
+.banners .left_box {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Δύο γραμμές ίδιου μεγέθους */
+    gap: 15px;
+}
+
+.banners .left_box .box {
+    overflow: hidden;
+    border-radius: 10px; /* Στρογγυλεμένες γωνίες για αισθητική */
+}
+
+.banners .left_box .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Διατήρηση αναλογιών χωρίς παραμόρφωση */
+}
+
+.banners .right_box {
+    display: grid;
+    grid-template-rows: auto auto; /* Ευελιξία ύψους */
+    gap: 15px;
+}
+
+.banners .right_box .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Δύο ίσα banner στη σειρά */
+    gap: 15px;
+}
+
+.banners .right_box .top img,
+.banners .right_box .bottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Εξασφαλίζει σωστή τοποθέτηση */
+    border-radius: 10px; /* Στρογγυλεμένες γωνίες */
+}
+
+.banners .right_box .bottom {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Responsive Προσαρμογές */
+@media (max-width: 768px) {
+    .banners .container {
+        grid-template-columns: 1fr; /* Μία στήλη για μικρές οθόνες */
+    }
+
+    .banners .right_box .top {
+        grid-template-columns: 1fr; /* Κάθετα τα banners */
+    }
+}
+
+
+.product_type {
+    padding: 20px;
+    background-color: #f9f9f9; /* Απαλό φόντο */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.product_type .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Δυναμική διάταξη */
+    gap: 20px; /* Κενά μεταξύ των κατηγοριών */
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.product_type .box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Σκιά */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product_type .box:hover {
+    transform: translateY(-5px); /* Εφέ ανύψωσης στο hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product_type .box .header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.product_type .box .header h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 2px solid #007bff; /* Γραμμή κάτω από τον τίτλο */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.product_type .productbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product_type .productbox:hover {
+    transform: translateY(-3px); /* Εφέ ανύψωσης στο hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product_type .productbox .img-box {
+    width: 100%;
+    overflow: hidden;
+}
+
+.product_type .productbox .img-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Εξασφαλίζει σωστή τοποθέτηση εικόνας */
+    border-bottom: 1px solid #ddd;
+}
+
+.product_type .productbox .detail {
+    padding: 10px;
+    text-align: center;
+}
+
+.product_type .productbox .detail h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product_type .productbox .detail p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product_type .productbox .icon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.product_type .productbox .icon button {
+    background-color: #eecb06;
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product_type .productbox .icon button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Διάταξη */
+@media (max-width: 768px) {
+    .product_type .container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Μικρότερες κάρτες προϊόντων */
+    }
+
+    .product_type .box .header h2 {
+        font-size: 20px;
+    }
+
+    .product_type .productbox .detail h3 {
+        font-size: 16px;
+    }
+
+    .product_type .productbox .detail p {
+        font-size: 14px;
+    }
+}

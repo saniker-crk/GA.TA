@@ -1,0 +1,19 @@
+{
+  "name": "eshopg-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd server && npm start",
+    "start:prod": "cd server && npm start:prod",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install && npm install --prefix client && npm run build --prefix client"
+  },
+  "proxy": "http://localhost:5000",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-private-property-in-object": "^7.25.9"
+  }
+}

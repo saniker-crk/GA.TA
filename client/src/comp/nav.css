@@ -1,0 +1,292 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+.header{
+    width: 100%;
+}
+
+.header .top_header{
+    max-width: 100%;
+    display: flex;
+    padding: 10px 10px;
+    background: #f6f7f8;
+}
+
+.header .top_header .icon{
+    margin-left: 20px;
+    color: #ababab;
+    font-size: 43px;
+   
+}
+
+.header .top_header .info p{
+    margin-left: 10px;
+    color: #8a8a8a;
+}
+
+.header .mid_header{
+    display: flex;
+    padding: 20px 40px;
+    max-width: 100%;
+    justify-content: space-between;
+
+}
+
+.header .mid_header .logo img{
+    
+    cursor: pointer;
+    object-fit: cover;
+    width: 200px;
+    background-color: #fff;
+    
+    
+}
+
+.header .mid_header .search_box input
+{
+      padding: 10px 10px;
+      outline: none;
+      background: none;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      width: 250px;
+      border: none;
+      background: #f6f7f8;
+
+}
+
+.header .mid_header .search_box button
+{
+    padding: 10px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border:none;
+    outline: none;
+    border:1px solid #dd6b00;
+    width: 50px;
+    background: #dd6b00;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: 0.5s;
+}
+
+.header .mid_header .search_box button:hover
+{
+    background: #fed700;
+    border:1 px solid #fed700;
+    color: #cd1e76;
+}
+
+.header .mid_header .user
+{
+    display: flex;
+    margin-right: 30px;
+
+}
+
+.header .mid_header .user .icon
+{
+    margin-right: 10px;
+}
+
+.header .mid_header .user .icon .btn
+{
+    
+        display: inline-block;
+        background-color: #e9660f; /* Πορτοκαλί χρώμα */
+        color: #fff; /* Λευκό κείμενο */
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Μαύρο πλέγμα γύρω από το κουμπί */
+        transition: box-shadow 0.3s;
+        
+    }
+    
+
+
+
+.header .last_header
+{
+    width: 100%;
+    padding: 10px 10px;
+    display:  flex;
+   background: #232322;
+   justify-content: space-between; 
+}
+
+.header .last_header .user_profile
+{
+    display: flex;
+    margin-top: 10px;
+}
+
+.header .last_header .user_profile .icon
+{   
+    
+    height: 30px;
+    padding: 5px 5px;
+   background: #fff;
+   border-radius: 50px; 
+   
+}
+
+.header .last_header .user_profile .info
+{
+    margin-left: 10px;
+    line-height:1px;
+    
+    
+
+}
+
+.header .last_header .user_profile .info h2 
+{
+    color: #fff;
+    font-size: 18px;
+}
+
+.header .last_header .user_profile .info p
+ {
+    color: #ababab;
+    font-size: 14px;
+ }
+
+ .header .last_header .nav
+ {
+    margin-top: 15px;
+ }
+
+ .header .last_header .nav ul
+{
+        display: flex;
+
+
+ }
+
+ .header .last_header .nav ul li
+ {
+    list-style: none;
+ }
+
+ .header .last_header .nav ul li .link
+ {
+    margin-right: 20px;
+    text-decoration: none;
+    color:#fff;
+    font-weight: 600;
+    transition: 0.5s;
+
+
+ }
+
+ .header .last_header .nav ul li .link:hover
+ {
+    color : #e9660f;
+
+ }
+
+ .header .last_header .offer
+ {
+    margin-right: 20px;
+    padding: 5px 20px;
+    background: #e9660f;
+    border-radius: 10px;
+ }
+
+ .header .last_header .offer p
+ {
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: #232322;
+    font-weight: 600;
+    font-size: 14px;
+ }
+
+/* Εξωτερικό wrapper για το dropdown ώστε να διαχειρίζεται το hover */
+.dropdown {
+    position: relative; /* Διασφαλίζει σωστή τοποθέτηση του dropdown */
+    display: inline-block;
+  }
+  
+  /* Στυλ για τον σύνδεσμο του dropdown */
+  .dropdown .dropdown-toggle {
+    text-decoration: none;
+    color: #ffffff; /* Προεπιλεγμένο χρώμα */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer; /* Δείχνει ότι είναι διαδραστικό */
+    transition: color 0.3s ease; /* Ομαλή μετάβαση για αλλαγή χρώματος */
+  }
+  
+  /* Αλλαγή χρώματος κειμένου κατά το hover */
+  .dropdown:hover .dropdown-toggle {
+    color: #e9660f; /* Επιθυμητό χρώμα κατά το hover, π.χ., κόκκινο */
+  }
+  
+  /* Στυλ για τα στοιχεία του dropdown μενού */
+  .dropdown .dropdown-menu {
+    display: none; /* Απόκρυψη του μενού από προεπιλογή */
+    position: absolute;
+    top: 100%; /* Τοποθετείται κάτω από το toggle */
+    left: 0;
+    background-color: #232322; /* Λευκό φόντο */
+    min-width: 160px; /* Ελάχιστο πλάτος */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Σκιερό φόντο */
+    z-index: 1; /* Διασφαλίζει ότι το μενού εμφανίζεται πάνω από άλλα στοιχεία */
+    border: 1px solid rgba(0,0,0,.15); /* Οριακή γραμμή */
+    border-radius: 4px; /* Στρογγυλεμένες γωνίες */
+  }
+  
+  /* Εμφάνιση του μενού κατά το hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Στυλ για τα στοιχεία του μενού */
+  .dropdown-item {
+    color: #ffffff; /* Σκούρο κείμενο */
+    padding: 12px 16px; /* Εσωτερικό διάστημα */
+    text-decoration: none; /* Αφαίρεση υπογράμμισης */
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Ομαλή μετάβαση για αλλαγή χρώματος */
+  }
+  
+  /* Αλλαγή χρώματος στοιχείων κατά το hover */
+  .dropdown-item:hover {
+    background-color: #636363; /* Ανοιχτό γκρι φόντο κατά το hover */
+    color: #e9660f; /* Μπλε κείμενο κατά το hover */
+  }
+  
+  /* Διαχωριστικό στο μενού */
+  .dropdown-divider {
+    height: 1px;
+    margin: 8px 0;
+    overflow: hidden;
+    background-color: #e9ecef;
+  }
+  
+  .profile-link {
+    color: white; /* Άσπρο χρώμα κειμένου */
+    background-color: #232322; /* Σκούρο background */
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px; /* Στρογγυλεμένες γωνίες */
+    transition: background-color 0.3s ease; /* Ομαλή μετάβαση στο hover */
+}
+
+.profile-link:hover {
+    background-color: #232322; /* Ανοιχτό γκρι φόντο κατά το hover */
+    color: #dd6b00;
+}
+

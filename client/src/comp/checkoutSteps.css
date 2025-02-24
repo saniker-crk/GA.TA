@@ -1,0 +1,254 @@
+.checkout-steps {
+    margin: 5rem 0;
+  }
+  
+  .checkout-steps .nav {
+    /* Περιορίζεις το πλάτος */
+    max-width: 600px;   /* Δοκίμασε 600px ή ό,τι σου ταιριάζει */
+    margin: 1rem auto;  /* Κεντράρισμα */
+    border-radius: 8px; /* Απαλή καμπύλη, αν θέλεις */
+    display: flex;      /* Δημιουργείς οριζόντια διάταξη */
+    justify-content: space-around; 
+    background-color: #ff6600;
+    padding: 0.5rem;
+  }
+  
+  .checkout-steps .nav-item {
+    margin: 0 2.5rem;  /* Μικρή οριζόντια απόσταση ανάμεσα στα items */
+  }
+  
+  .checkout-steps .nav-link {
+    display: block;
+    background-color: #a3a09d;    /* Πορτοκαλί background */
+    color: #fff !important;       /* Λευκό κείμενο */
+    border-radius: 6px;
+    padding: 0.5rem 1rem;         /* Επαρκές padding ώστε να φαίνονται */
+    text-align: center;           /* Κεντράρισμα κειμένου */
+    transition: background 0.3s ease;
+  }
+  
+  /* Ενεργή καρτέλα, όταν ο χρήστης μπορεί να κάνει κλικ */
+  .checkout-steps .nav-link:not([disabled]):hover {
+    background-color: #ff6600;
+    color: #fff !important;
+  }
+  
+  /* Όταν ένα link είναι disabled (π.χ. step δεν έχει ολοκληρωθεί) */
+  .checkout-steps .nav-link[disabled] {
+    color: #aaa !important;
+    background-color: #f1f1f1;
+    cursor: not-allowed;
+    /* Για να φαίνεται “κλειδωμένο” */
+  }
+  
+  /* Παράδειγμα: styling όταν το step είναι “ενεργό” στο Routing (Bootstrap συνήθως δίνει .active) */
+  .checkout-steps .nav-link.active {
+    padding: 10px 10px;
+    background-color: #e49709;
+    color: #fff !important;
+    cursor: default;
+    pointer-events: none;
+  }
+  
+  /* Προαιρετικό: Μικρό animation κατά το hover */
+  .checkout-steps .nav-link:not([disabled]):hover {
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.3);
+  }
+
+
+  .form input[type='text'],
+.form input[type='email'],
+.form input[type='password'],
+.form input[type='date'],
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1rem;       /* Πιο μεγάλο padding από το αρχικό */
+  font-size: 1.2rem;          /* Ελαφρώς μεγαλύτερη γραμματοσειρά */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form .form-group {
+    margin: 1.5rem 0;
+  }
+
+
+  .btn-primary {
+    background: #ff6600;  /* Πορτοκαλί χρώμα */
+    color: #fff;
+    padding: 0.6rem 1.2rem;   /* Μεγαλώνουμε λίγο το κουμπί */
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background: #e65c00;  /* Εφέ hover */
+  }
+
+
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* --- Στυλ σε σώμα σελίδας --- */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Αλλαγή αν θες άλλο φόντο */
+    color: #333;              /* Βασικό χρώμα κειμένου */
+  }
+  
+  /* --- Μπάρα βημάτων (Sign In, Shipping, Payment, Checkout) --- */
+  .nav-steps {
+
+    display: flex;                 /* Ή μπορούμε να το κάνουμε column αν θες κατακόρυφη λίστα */
+     justify-content: center;
+        /* Ή space-between, space-around, ανάλογα με το layout */
+    background-color: #9f9f9f;     /* Γκρι χρώμα φόντου */
+    border-radius: 4px;            /* Λίγη καμπύλη στις γωνίες (προαιρετικό) */
+  }
+  
+  /* Κάθε link/κουμπί του βήματος */
+  .nav-steps a {
+    color: #ffffff;                /* Χρώμα κειμένου των βημάτων */
+    text-decoration: none;         /* Αφαίρεση υπογράμμισης */
+    padding: 0.75rem 1.5rem;       /* Εσωτερικά κενά */
+    display: inline-block;         /* Ωστε να έχει ύψος/πλάτος */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect, αν θέλεις */
+  .nav-steps a:hover {
+    background-color: #b8b8b8;     /* Λίγο πιο ανοιχτό/σκούρο γκρι */
+  }
+  
+  /* Το ενεργό βήμα να είναι πορτοκαλί */
+  .nav-steps a.active {
+    background-color: #e08a00;     /* Πορτοκαλί χρώμα (προσαρμόστε το) */
+  }
+  
+  /* --- Κεντρικό container της σελίδας Payment --- */
+  .payment-container {
+    max-width: 800px;     /* Ρύθμισε το ανάλογα */
+    margin: 2rem auto;    /* Κεντράρει οριζόντια με κενά πάνω-κάτω */
+    padding: 1rem;
+  }
+  
+  /* Τίτλος σελίδας (π.χ. #PAYMENT METHOD) */
+  .payment-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase; /* Προαιρετικό: κεφαλαία */
+  }
+  
+  /* Πλαίσιο επιλογών πληρωμής */
+  .payment-methods {
+    margin: 1rem 0;
+    line-height: 1.5;
+  }
+  
+  .payment-methods label {
+    display: block;
+    margin: 0.5rem 0;  /* Κενό μεταξύ των επιλογών */
+    cursor: pointer;   /* Δείξε ότι είναι clickable */
+  }
+  
+  /* Radio buttons styling (προαιρετικό, πιο «flat» design) */
+  .payment-methods input[type="radio"] {
+    margin-right: 0.5rem;
+    transform: scale(1.2); /* Κάνε τα λίγο μεγαλύτερα */
+  }
+  
+  /* --- Κουμπί Continue --- */
+  .button-continue {
+    display: inline-block;
+    background-color: #e08a00;  /* Πορτοκαλί */
+    color: #fff;               /* Λευκό κείμενο */
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;        /* Προαιρετικό: στρογγυλεμένες γωνίες */
+    cursor: pointer;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+    margin-top: 1rem;          /* Για να απέχει λίγο από τα radio buttons */
+    text-decoration: none;     /* Αν θες να το εμφανίσεις σαν <a> */
+  }
+  
+  /* Hover για το κουμπί Continue */
+  .button-continue:hover {
+    opacity: 0.8; /* Ενα απλό εφέ */
+  }
+
+
+
+
+
+
+
+  .checkout-steps {
+    /* Ευθυγραμμίζουμε τα βήματα στο κέντρο */
+    display: flex;
+    justify-content: center;
+    /* Προαιρετικά, μπορείς να βάλεις ένα φόντο ή κάποιο padding */
+    background-color: #9f9f9f; /* Γκρι φόντο, όπως στο screenshot */
+    padding: 0.5rem 0;
+    border-radius: 4px; /* Λίγη καμπυλότητα */
+  }
+  
+  .checkout-steps .nav-item {
+    margin: 0 0.3rem; /* Λίγο διάστημα ανάμεσα στα βήματα */
+  }
+  
+  /* Το κείμενο των links */
+  .checkout-steps .nav-link {
+    /* Χρώμα και “κουμπάκι” */
+    color: #ffffff;
+    background-color: #9f9f9f;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    /* Μεταβατικό εφέ στο hover (προαιρετικά) */
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Όταν το link είναι clickable και ο χρήστης κάνει hover */
+  .checkout-steps .nav-link:hover {
+    background-color: #b3b3b3; /* Λίγο πιο ανοιχτό γκρι */
+    text-decoration: none;     /* Μένει χωρίς υπογράμμιση */
+  }
+  
+  /* Για τα disabled βήματα (π.χ. δεν έχεις φτάσει εκεί ακόμα) */
+  .checkout-steps .nav-link:disabled,
+  .checkout-steps .nav-link.disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+  }
+  
+  /* Όταν το path είναι το τρέχον (Nav.Link ενεργό) */
+  .checkout-steps .nav-link.active {
+    background-color: #e08a00; /* Πορτοκαλί χρώμα */
+    color: #fff;
+    cursor: default;
+  }
+
+
+  
+
+
+
+
+  
+

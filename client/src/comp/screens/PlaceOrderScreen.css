@@ -1,0 +1,72 @@
+/* PlaceOrder.css */
+
+/* 1) Κεντρικό container που κεντράρει το περιεχόμενο */
+.placeorder-container {
+    
+    max-width: 900px;   /* Δοκίμασε 800, 1000 κτλ. */
+    margin: 2rem auto;  /* Αυτό κεντράρει το div στο browser */
+    padding: 1rem;      /* Λίγο κενό γύρω-γύρω */
+    /* Αν θες ΟΛΟ το κείμενο να βγει κεντραρισμένο:
+       text-align: center;
+    */
+  }
+  
+  /* 2) Τίτλος σελίδας (#Place Order) */
+  .placeorder-container h3 {
+    font-weight: bold;
+    text-transform: uppercase;  /* Αν θέλεις κεφαλαία */
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  /* 3) Στυλ στους υπότιτλους (h2: Shipping, Payment Method, Order Items...) */
+  .placeorder-container h2 {
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  
+  /* 4) Αν θες επιπλέον διάκριση στα ListGroup Items */
+  .placeorder-container .list-group-item {
+    margin-bottom: 0.5rem;       /* Απόσταση μεταξύ των list items */
+    border: 1px solid #ddd;      /* Απαλό περίγραμμα */
+    border-radius: 4px;          /* Προαιρετική καμπυλότητα */
+    padding: 0.75rem 1rem;       /* Λίγο έξτρα padding */
+  }
+  
+  /* 5) Στυλ στη στήλη του Order Summary (React-Bootstrap Card) */
+  .placeorder-container .card {
+    margin-top: 1rem;
+    border-radius: 4px;
+  }
+  
+  .placeorder-container .card h2 {
+    margin-bottom: 1rem;
+  }
+  
+  /* 6) Κουμπί Place Order (button.btn-block) */
+  .placeorder-container .btn-block {
+    background-color: #000000; /* Πορτοκαλί */
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .placeorder-container .btn-block:hover {
+    background-color: #e65c00;   /* Εφέ hover */
+  }
+  
+  /* 7) Στυλ στις εικόνες προϊόντων (προαιρετικά) */
+  .placeorder-container img {
+    border: 100px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Μπορείς να προσθέσεις και έξτρα κανόνες αν θέλεις να δώσεις εφέ hover, 
+     διαφορετικά χρώματα για τα variant danger/success κ.λπ. */
+  

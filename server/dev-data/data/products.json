@@ -1,0 +1,74 @@
+[
+
+  {
+    "id": "1",
+    "name": "Endurance RUN 2 Bluetooth",
+    "brand": "JBL",
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 1,
+    "price": 50,
+    "countInStock": 15,
+    "summary": "Headphone",
+    "description": "Endurance RUN 2 Bluetooth, In-Ear Sport Headphones",
+    "imageCover": "product-1-cover.png"
+    
+  },
+  {
+    "id": "2",
+    "name": "JBL Go 3",
+    "brand": "JBL",
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 2,
+    "price": 34,
+    "countInStock": 9,
+    "summary": "Wireless Speaker",
+    "description": "Αδιάβροχο Ηχείο Bluetooth 4.2W με Διάρκεια Μπαταρίας έως 5 ώρες Μαύρο",
+    "imageCover": "product-2-cover.jpeg",
+    "images": ["product-2-1.jpeg", "product-2-2.jpeg", "product-2-2.jpeg"]
+    
+  },
+  {
+    "id": "3",
+    "name": "MSI Katana 17",
+    "brand": "MSI",
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 3,
+    "price": 250,
+    "countInStock": 7,
+    "summary": "Laptop ",
+    "description": " B12UCRK-1055XPL 17.3 IPS FHD 144Hz (i5-12450H/16GB/512GB SSD/GeForce RTX 3050/No OS) (US Keyboard)",
+    "imageCover": "product-3-cover.jpeg",
+    "images": ["product-3-1.jpeg", "product-3-2.jpeg"]
+    
+  },
+  {
+    "id": "4",
+    "name": "HelloWatch 3+",
+    "brand": "HelloWatch",
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 4,
+    "price": 65,
+    "countInStock": 5,
+    "summary": "Smartwatch",
+    "description": "Το πιο ανθεκτικό και ικανό HelloWatch 3+ που κατασκευάστηκε ποτέ είναι σχεδιασμένο για εξερεύνηση, περιπέτεια και αντοχή. Με κάσα τιτανίου 49 χιλιοστών αεροδιαστημικής ποιότητας, εξαιρετικά μεγάλη διάρκεια λειτουργίας της μπαταρίας,... ",
+    "imageCover": "product-4-cover.webp"
+    
+  },
+  {
+    "id": "5",
+    "name": "WH-CH720N",
+    "brand": "Sony",
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 5,
+    "price": 155,
+    "countInStock": 15,
+    "summary": "Headphone",
+    "description": "Με την τεχνολογία εξουδετέρωσης θορύβου, μια ελαφριά σχεδίαση και μεγάλη διάρκεια μπαταρίας, μπορείτε να απολαμβάνετε τη μουσική σας για μεγαλύτερα χρονικά διαστήματα χωρίς να σας διακόπτουν οι ήχοι του περιβάλλοντος",
+    "imageCover": "tour-2-cover.jpg"
+    
+  }
+ 
+  
+]
+
+

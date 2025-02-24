@@ -1,0 +1,71 @@
+/* 
+  1) Το "κεντρικό" container:
+     - Περιορίζει το πλάτος (max-width),
+     - Το κεντράρει οριζόντια (margin: 0 auto),
+     - Προσθέτει λίγο "padding".
+*/
+.order-screen {
+    max-width: 900px;  /* Παίξε με 800, 1000, ανάλογα με τις προτιμήσεις σου */
+    margin: 2rem auto; /* 2rem πάνω-κάτω, αυτόματο κέντρο αριστερά-δεξιά */
+    padding: 1rem;
+    /* Αν θες ΟΛΟ το κείμενο στο κέντρο, ξεκλείδωσε το παρακάτω */
+    /* text-align: center; */
+  }
+  
+  /* 2) Τίτλος σελίδας (π.χ. "Order XYZ") */
+  .order-screen h1 {
+    text-transform: uppercase; 
+ 
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* 3) Οι υπότιτλοι (π.χ. Shipping, Payment Method, Order Items, κ.λπ.) */
+  .order-screen h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  
+  /* 4) Στυλ για τις κάρτες (react-bootstrap Card) */
+  .order-screen .card {
+    margin-top: 1rem; /* λίγο κενό πάνω από την κάρτα */
+  }
+  
+  /* 5) Λίστα αντικειμένων (ListGroup, ListGroup.Item) */
+  .order-screen .list-group-item {
+    margin-bottom: 0.5rem;   /* Απόσταση ανάμεσα στα item */
+    border: 1px solid #ddd;  /* Απαλό γκρι περίγραμμα */
+  }
+  
+  /* 6) Εικόνες προϊόντων (μπορείς να αφαιρέσεις αν τις στολίζεις αλλού) */
+  .order-screen img {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* 7) Κουμπιά (όπως "Test Pay Order", "Mark As Delivered") */
+  .order-screen button {
+    background-color: #ff6600; /* Πορτοκαλί */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .order-screen button:hover {
+    background-color: #e65c00; /* Εφέ hover */
+  }
+  
+  /* Αν χρησιμοποιείς .btn.btn-block του Bootstrap, 
+     μπορείς να το στοχεύσεις έτσι:
+  .order-screen .btn.btn-block {
+    width: 100%;
+    display: block;
+  }
+  */
+  
